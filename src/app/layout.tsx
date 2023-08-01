@@ -20,7 +20,9 @@ export default function RootLayout({
       <body>
         <Navbar />
         {children}
-        <Footer />
+        <div className="dark:bg-neutral-800">
+          <Footer />
+        </div>
       </body>
     </html>
   );

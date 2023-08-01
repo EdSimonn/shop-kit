@@ -1,21 +1,22 @@
 /** @format */
-interface AccordionItem {
+interface FooterItem {
   length: number;
   title: string;
   links: string[] | { name: string }[];
   isActive: boolean;
 }
 
-export const initialAccordionItems: AccordionItem[] = [
+export const initialFooterItems: FooterItem[] = [
   {
     length: 0,
     title: "SHOP",
     links: [
-      { name: "Abouts us" },
-      { name: "Leadershiip" },
-      { name: "Careers" },
-      { name: "Article & News" },
-      { name: "Legaol Notice" }
+      { name: "New In" },
+      { name: "" },
+      { name: "Collections" },
+      { name: "Top Brands" },
+      { name: "Sales" },
+      { name: "Special Offer" }
     ],
     isActive: false,
   },
@@ -23,11 +24,13 @@ export const initialAccordionItems: AccordionItem[] = [
     length: 0,
     title: "INFORMATION",
     links: [
-      { name: "Abouts us" },
-      { name: "Leadershiip" },
-      { name: "Careers" },
-      { name: "Article & News" },
-      { name: "Legaol Notice" }
+      { name: "About" },
+      { name: "Customer Service" },
+      { name: "Reward Program" },
+      { name: "Shippings & Returns" },
+      { name: "Privacy Policy" },
+      { name: "Terms & Conditions" },
+      { name: "Blog" },
     ],
     isActive: false
   },
@@ -35,11 +38,12 @@ export const initialAccordionItems: AccordionItem[] = [
     length: 0,
     title: "CUSTOMER SERVICE",
     links: [
-      { name: "Abouts us" },
-      { name: "Leadershiip" },
-      { name: "Careers" },
-      { name: "Article & News" },
-      { name: "Legaol Notice" }
+      { name: "Search Terms" },
+      { name: "Advanced Search" },
+      { name: "Orders & Returns" },
+      { name: "Contact Us" },
+      { name: "Theme FAQS" },
+      { name: "Consultant" }
     ],
     isActive: false,
   },

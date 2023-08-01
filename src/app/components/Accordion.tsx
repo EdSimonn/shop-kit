@@ -4,13 +4,13 @@
 
 import { ChevronDown } from "lucide-react";
 import React, { useState } from "react";
-import { initialAccordionItems } from "@/helpers";
+import { initialFooterItems } from "@/helpers";
 
 const Accordion: React.FC = () => {
-  const [accordionItems, setAccordionItems] = useState(initialAccordionItems);
+  const [footerItems, setFooterItems] = useState(initialFooterItems);
 
   const handleAccordionToggle = (index: number) => {
-    setAccordionItems((prevItems) =>
+    setFooterItems((prevItems) =>
       prevItems.map((item, i) => ({
         ...item,
         isActive: i === index ? !item.isActive : false,
@@ -19,15 +19,15 @@ const Accordion: React.FC = () => {
   };
 
   return (
-    <div className="-space-y-1">
-      {accordionItems.map((item, index) => (
+    <div className=" dark:bg-neutral-800">
+      {footerItems.map((item, index) => (
         <div
           key={index}
-          className="rounded-none border border-l-0 border-r-0 border-t-0 border-neutral-200 dark:bg-neutral-800"
+          className="border-b border-neutral-200 dark:bg-neutral-800"
         >
           <div className="border-bottom">
-            <button
-              className={`group relative flex w-full items-center font-semibold border-0 bg-white px-5 py-4 text-left text-xs dark:bg-neutral-800 dark:text-white ${
+            <div
+              className={`group relative flex w-full items-center font-semibold bg-white px-5 py-4 text-left text-xs dark:bg-neutral-800 dark:text-white ${
                 item.isActive ? "bg-white" : ""
               }`}
               onClick={() => handleAccordionToggle(index)}
@@ -42,16 +42,16 @@ const Accordion: React.FC = () => {
                   }`}
                 />
               </span>
-            </button>
+            </div>
           </div>
-          <div className="w-full border border-dotted"></div>
+          <div className="w-full border-dashed" />
           <div className={`${item.isActive ? "visible" : "hidden"} border-0 `}>
             <ul className="mt-4 px-5">
               {item.links.map((link, index) => (
                 <li
                   key={index}
-                  className={`${
-                    index !== item.length - 1 ? `mb-2` : `mb-0`
+                  className={`text-gray-200 hover:text-white cursor-pointer ${
+                    index !== item.length - 1 ? `mb-3` : `mb-0`
                   } text-xs text-white`}
                 >
                   {typeof link === "string" ? link : link.name}
@@ -61,6 +61,23 @@ const Accordion: React.FC = () => {
           </div>
         </div>
       ))}
+
+      <div className="flex flex-col px-5 py-5">
+        <h4 className="text-white font-semibold text-sm">NEWSLETTER SIGN UP</h4>
+        <p className="mt-4 text-sm text-gray-200 ">
+          Sign up for exclusive updates, new arrivals and insider only discounts
+        </p>
+        <div className="flex gap-4 mt-4">
+          <input
+            placeholder="enter your email address"
+            type="text"
+            className="w-[60%] py-2 p-2.5 text-white outline-none border-[1px] border-gray-200 bg-neutral-800"
+          />
+          <button className="py-2 px-6 bg-white text-sm font-semibold">
+            SUBMIT
+          </button>
+        </div>
+      </div>
     </div>
   );
 };

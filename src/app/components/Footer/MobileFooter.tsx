@@ -5,11 +5,8 @@ import Accordion from "../Accordion";
 
 const MobileFooter = () => {
   return (
-    <div className="sm:hidden">
+    <div className="md:hidden">
       <Accordion />
-      <div>
-        <div>Leroy Jenkins</div>
-      </div>
     </div>
   );
 };
