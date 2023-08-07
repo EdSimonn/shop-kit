@@ -1,4 +1,6 @@
 /** @format */
+import { hero1 } from "../public/assets";
+
 interface FooterItem {
   length: number;
   title: string;
@@ -48,3 +50,33 @@ export const initialFooterItems: FooterItem[] = [
     isActive: false,
   },
 ];
+
+export const bannerData = [
+  {
+    img: hero1,
+    title: "The Home Collection"
+  },
+  {
+    img: hero1,
+    title: "The Away Collection"
+  },
+]
+
+export const category = [
+  {
+    img: hero1,
+    name: 'Soccer',
+  },
+  {
+    img: hero1,
+    name: 'NBA',
+  },
+  {
+    img: hero1,
+    name: 'Baseball',
+  },
+  {
+    img: hero1,
+    name: 'NFL',
+  },
+]
