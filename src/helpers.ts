@@ -1,5 +1,5 @@
 /** @format */
-import { hero1 } from "../public/assets";
+import { hero1, hero2, cat1, item1 } from "../public/assets";
 
 interface FooterItem {
   length: number;
@@ -57,26 +57,92 @@ export const bannerData = [
     title: "The Home Collection"
   },
   {
-    img: hero1,
+    img: hero2,
     title: "The Away Collection"
   },
 ]
 
 export const category = [
   {
-    img: hero1,
+    img: cat1,
     name: 'Soccer',
   },
   {
-    img: hero1,
+    img: cat1,
     name: 'NBA',
   },
   {
-    img: hero1,
+    img: cat1,
     name: 'Baseball',
   },
   {
-    img: hero1,
+    img: cat1,
     name: 'NFL',
+  },
+]
+
+export const products = [
+  {
+    title: 'Best Selling',
+    img: item1,
+    name: "Athletic Club de Bilbao Home Shirt",
+    price: 60
+  },
+  {
+    title: 'Best Selling',
+    img: item1,
+    name: "Athletic Club de Bilbao Home Shirt",
+    price: 60
+  },
+  {
+    title: 'Best Selling',
+    img: item1,
+    name: "Athletic Club de Bilbao Home Shirt",
+    price: 60
+  },
+  {
+    title: 'Best Selling',
+    img: item1,
+    name: "Athletic Club de Bilbao Home Shirt",
+    price: 60
+  },
+  {
+    title: 'Best Selling',
+    img: item1,
+    name: "Athletic Club de Bilbao Home Shirt",
+    price: 60
+  },
+  {
+    title: 'Best Selling',
+    img: item1,
+    name: "Athletic Club de Bilbao Home Shirt",
+    price: 60
+  },
+]
+
+export const soon = [
+  {
+    img: item1,
+    name: "Follow us on instagram",
+  },
+  {
+    img: item1,
+    name: "Follow us on instagram",
+  },
+  {
+    img: item1,
+    name: "Follow us on instagram",
+  },
+  {
+    img: item1,
+    name: "Follow us on instagram",
+  },
+  {
+    img: item1,
+    name: "Follow us on instagram",
+  },
+  {
+    img: item1,
+    name: "Follow us on instagram",
   },
 ]

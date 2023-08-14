@@ -3,13 +3,12 @@
 import { Heart, ShoppingCart } from "lucide-react";
 import Link from "next/link";
 import React from "react";
-import { BsHeart, BsHeartFill } from "react-icons/bs";
 
 export const DesktopNav = () => {
   return (
     <div className="hidden lg:block">
       <nav className="border-b border-gray-200">
-        <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-3">
+        <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-3 px-8">
           <Link href="#" className="flex items-center">
             <span className="self-center text-2xl font-semibold whitespace-nowrap">
               SHOP KIT

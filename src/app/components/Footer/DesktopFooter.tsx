@@ -9,7 +9,7 @@ const DesktopFooter = () => {
 
   return (
     <div className="hidden md:block">
-      <footer className="bg-white dark:bg-neutral-800 sm:py-12 py-6 p-3 px-6">
+      <footer className="bg-white dark:bg-neutral-800 sm:py-12 py-6 mx-auto p-3 px-8">
         <div className="w-full flex gap-16 justify-center lg:flex-row flex-col max-w-screen-xl flex-wrap mx-auto p-3 px-6">
           <div className="flex-[1.5] w-full flex flex-row justify-between flex-wrap">
             {footerItems.map((item) => (
